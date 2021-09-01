@@ -1,0 +1,13 @@
+label{
+    color: gray;
+    font-size: 14px;
+}
+::placeholder{
+    color: lightgray;
+    font-size: 14px;
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+}

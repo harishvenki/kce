@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+  background-color: #f5f6fa;
+}
+
+.wave-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Noto Sans";
+  line-height: 52px;
+  border-radius: 10px;
+  position: absolute;
+  overflow: hidden;
+  transition: all 1s;
+  height: 200px;
+  background: white;
+  width: 300px;
+}
+
+.wave-btn:before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 130px;
+  background-color: #ccf5ff;
+  top: 30px;
+  left: 50%;
+  animation: wave 10s infinite linear;
+  transition: all 1s;
+}
+
+.wave-btn:hover:before {
+  top: 15px;
+}
+.wave-pattern {
+  height: 500px;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%) rotate(-160deg);
+  }
+
+  100% {
+    transform: translate(-50%) rotate(300deg);
+  }
+}
+

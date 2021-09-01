@@ -1,0 +1,16 @@
+/* Styles for tab labels */
+.mat-tab-label {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+    color: #0099ff;
+    font-weight: bold;
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+    background-color: #0099ff !important;
+}

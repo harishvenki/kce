@@ -1,0 +1,106 @@
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <h5>My Completion Status</h5>
+    </div>
+    <div class="card-block row">
+      <div class="col-sm-12 col-lg-12 col-xl-12">
+        <div class="container-fluid">
+          <table mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="sNo">
+              <th mat-header-cell *matHeaderCellDef>Serial No.</th>
+              <td mat-cell *matCellDef="let element; let i = index">
+                {{ i + 1 }}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="courseName">
+              <th mat-header-cell *matHeaderCellDef>Course Name</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.courseName }}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="enrolledOn">
+              <th mat-header-cell *matHeaderCellDef>Course Enrolled On</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.enrolledOn }}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="myProgress">
+              <th mat-header-cell *matHeaderCellDef>My Progress</th>
+              <td mat-cell *matCellDef="let element">
+                <div class="progress-wrapper">
+                  <div class="current" [ngStyle]="getOverlayStyle()">
+                    <b>{{ element.myProgress }}/{{ max }}</b>
+                  </div>
+                  <round-progress
+                    [current]="element.myProgress"
+                    [max]="max"
+                    [color]="gradient ? 'url(#gradient)' : color"
+                    [background]="background"
+                    [radius]="radius"
+                    [stroke]="stroke"
+                    [semicircle]="semicircle"
+                    [rounded]="rounded"
+                    [clockwise]="clockwise"
+                    [responsive]="responsive"
+                    [duration]="duration"
+                    [animation]="animation"
+                    [animationDelay]="animationDelay"
+                  ></round-progress>
+                </div>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="target">
+              <th mat-header-cell *matHeaderCellDef>Target</th>
+              <td mat-cell *matCellDef="let element">
+                <div class="progress-wrapper">
+                  <div class="current" [ngStyle]="getOverlayStyle()">
+                    <b>{{ element.target }}/{{ max }}</b>
+                  </div>
+                  <round-progress
+                    [current]="element.target"
+                    [max]="max"
+                    [color]="gradient ? 'url(#gradient)' : color"
+                    [background]="background"
+                    [radius]="radius"
+                    [stroke]="stroke"
+                    [semicircle]="semicircle"
+                    [rounded]="rounded"
+                    [clockwise]="clockwise"
+                    [responsive]="responsive"
+                    [duration]="duration"
+                    [animation]="animation"
+                    [animationDelay]="animationDelay"
+                  ></round-progress>
+                </div>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef>Status</th>
+              <td mat-cell *matCellDef="let element">
+                <div class="status">
+                  {{ element.status }}
+                </div>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+
+          <mat-paginator
+            [pageSizeOptions]="[5, 10, 20]"
+            showFirstLastButtons
+            aria-label="Select page of periodic elements"
+          >
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

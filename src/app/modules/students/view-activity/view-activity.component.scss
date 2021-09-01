@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    overflow: scroll;
+}
+  
+th, td {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+mat-header-cell {
+    display:flex;
+    justify-content:flex-end;
+}
+.mat-cell {
+    text-align: center;
+}
+
+::ng-deep .mat-column-activityName .mat-column-activityType {
+    width: 200px;
+}
+
+

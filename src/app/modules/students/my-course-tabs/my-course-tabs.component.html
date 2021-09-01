@@ -1,0 +1,24 @@
+<mat-tab-group #tabGroup>
+    <mat-tab label="Learning Content">
+        <ng-template matTabContent>
+            <app-learning-content></app-learning-content>
+        </ng-template>
+    </mat-tab>
+    <mat-tab label="Practice Quiz">
+        <ng-template matTabContent>
+            <app-practice-quiz></app-practice-quiz>
+        </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Coding Challenge">
+        <ng-template matTabContent>
+            <app-coding-challenge></app-coding-challenge>
+        </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Assessments">
+        <ng-template matTabContent>
+            <app-assessments></app-assessments>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>

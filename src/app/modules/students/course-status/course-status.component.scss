@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+}
+
+.current {
+    position: absolute;
+    color: #bbb;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.progress-wrapper {
+    position: relative;
+    margin: 20px 0;
+    font-size: 40px;
+    width: max-content;
+}
+
+.mat-header-cell {
+    color: #0099ff;
+    font-size: 14px;
+    font-style: inherit;
+}
+.status {
+    width: 85px;
+    height: 20px;
+    border-radius: 5px;
+    color: #f58676;
+    background-color: #fad9d4;
+    text-align: center;
+    font-size: 12px;
+}
