@@ -8,3 +8,18 @@ table {
     font-size: 14px;
     font-style: inherit;
 }
+
+.btn {
+    background-color: #0099ff !important;
+    border-color: #0099ff !important;
+    width: max-content !important;
+    height: 35px;
+}
+
+th.mat-header-cell {
+    text-align: center !important;
+}
+
+::ng-deep .mat-cell {
+    text-align: center;
+}

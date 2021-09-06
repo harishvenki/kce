@@ -11,5 +11,8 @@ export class EnrolledCoursesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  courses = [ 
+    {name: "ANGULAR FRAMEWORK", description: "WAP", link: ""},
+  ]
 
 }

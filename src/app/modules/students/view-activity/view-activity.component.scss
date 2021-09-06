@@ -9,16 +9,21 @@ th, td {
     max-width: 200px;
 }
 
-mat-header-cell {
-    display:flex;
-    justify-content:flex-end;
+::ng-deep .mat-column-activityName .mat-column-activityType {
+    width: 200px;
 }
-.mat-cell {
+
+th.mat-header-cell {
+    text-align: center !important;
+}
+
+::ng-deep .mat-cell {
     text-align: center;
 }
 
-::ng-deep .mat-column-activityName .mat-column-activityType {
-    width: 200px;
+.mat-header-cell {
+    color: #0099ff;
+    font-style: inherit;
 }
 
 

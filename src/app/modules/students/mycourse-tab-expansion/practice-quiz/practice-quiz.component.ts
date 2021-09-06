@@ -34,4 +34,8 @@ export class PracticeQuizComponent implements OnInit {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
+
+  solve(element){
+    console.log(element);
+  }
 }

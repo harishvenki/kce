@@ -1,30 +1,27 @@
 
-<div class="d-flex flex-wrap">
-        <div class="wave-pattern">
-            <div class="wrapper">
-                <a href="#" class="wave-btn"><span>wave</span></a>
-            </div>
-        </div>
-        <div class="wave-pattern">
-            <div class="wrapper">
-                <a href="#" class="wave-btn"><span>wave</span></a>
-            </div>
-        </div>
-        <div class="wave-pattern">
-            <div class="wrapper">
-                <a href="#" class="wave-btn"><span>wave</span></a>
-            </div>
-        </div>
-        <div class="wave-pattern">
-            <div class="wrapper">
-                <a href="#" class="wave-btn"><span>wave</span></a>
-            </div>
-        </div>
-        <div class="wave-pattern">
-            <div class="wrapper">
-                <a href="#" class="wave-btn"><span>wave</span></a>
-            </div>
-        </div>
+<div class="outer-card w-100">
+	<div class="card-header">
+		<h5>ENROLLED COURSES</h5>
+	</div>
+	<div *ngFor="let course of courses">
+		<div>
+			<div class="card">
+				<div class="card-img" style="background-image:url('/assets/images/course.jpeg');">
+					<div class="overlay">
+						<div class="overlay-content">
+							<a href="#!">View Details</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card-content">
+					<a href="#!">
+						<h2 class="title">{{course.name }}</h2>
+						<div class="title">{{ course.description }}</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
 

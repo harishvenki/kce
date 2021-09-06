@@ -1,0 +1,65 @@
+mat-card {
+  height: max-content;
+  margin: 20px 0;
+}
+
+.description {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 20px;
+  font-family: Roboto;
+  color: gray;
+  font-weight: 600;
+}
+
+.hover:hover {
+  color: #0099ff;
+  cursor: pointer;
+}
+
+mat-icon {
+  vertical-align: middle;
+}
+.prof-details {
+  font-family: Roboto;
+  color: gray;
+  font-weight: 600;
+}
+
+.course-description {
+  padding: 10px;
+}
+
+.info {
+  width: 65px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+.heading {
+    width: 65px;
+}
+
+.due-date {
+  color: #f58676;
+  background-color: #fad9d4;
+}
+.start-date {
+  background-color: #add8e6;
+  color: #0099ff;
+}
+
+.progress {
+  margin-top: 5px;
+  width: 65px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}

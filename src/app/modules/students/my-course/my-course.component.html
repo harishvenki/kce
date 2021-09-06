@@ -1,1 +1,52 @@
-<app-my-course-tabs></app-my-course-tabs>
+<mat-card>
+  <div class="w-100">
+    <div class="d-flex flex-row justify-content-around">
+      <div class="m-5">
+        <img src="assets/images/bookshelf.png" width="130px" height="160px" />
+      </div>
+      <div class="d-flex flex-column course-description">
+        <div>
+          <h6 class="hover">WEBSCRIPTING & ANGULAR FRAMEWORK</h6>
+        </div>
+        <div class="d-flex flex-row justify-content-between m-5">
+          <span class="hover prof-details">
+            <mat-icon>group</mat-icon>Mr.V.Jothi Prakash</span
+          >
+          <span class="hover prof-details">
+            <mat-icon>lock</mat-icon> Assistant Professor</span
+          >
+          <span class="hover prof-details"
+            ><mat-icon> location_on</mat-icon>Karpagam college of
+            engineering</span
+          >
+        </div>
+
+        <div class="row">
+          <span class="description">
+            This course will take you through the basics of javascript,
+            Typescript and build awesome, reactive web apps using Angular
+            Framework
+          </span>
+        </div>
+        <div class="d-flex flex-row justify-content-between w-50">
+          <b class="heading"> Start Date</b>
+          <b class="heading"> Due Date</b>
+          <b class="heading">Progress</b>
+        </div>
+        <div class="d-flex flex-row justify-content-between w-50">
+          <span class="info start-date"> 21313</span>
+          <span class="info due-date"> 42412</span>
+          <span class="progress"> 
+              <div class="progress-bar" role="progressbar" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <span class="sr-only">70% Complete</span>
+              </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <app-my-course-tabs class="m-5"></app-my-course-tabs>
+</mat-card>

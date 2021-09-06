@@ -1,1 +1,23 @@
-<p>learning-content works!</p>
+<div class="container m-5">
+  <mat-accordion *ngFor="let data of panelData">
+    <mat-expansion-panel
+      [expanded]="step === data.id"
+      (opened)="setStep(data.id)"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ data.title }} </mat-panel-title>
+        <mat-panel-description>
+          {{ data.description }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <iframe
+        width="560"
+        height="315"
+        [src]="data.source"
+        allowfullscreen
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

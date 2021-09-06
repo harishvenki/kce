@@ -34,4 +34,8 @@ export class CodingChallengeComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
   }
 
+  solve(element) {
+    
+  }
+
 }
